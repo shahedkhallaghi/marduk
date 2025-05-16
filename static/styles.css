@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.progress-bar {
+    width: 220px;
+    height: 20px;
+    border: 1px solid #555;
+    border-radius: 2px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.progress-blocks {
+    display: flex;
+    position: absolute;
+    height: 100%;
+}
+
+.block {
+    width: 60px;
+    height: 100%;
+    background: linear-gradient(to bottom, #7ba3e8 0%, #3361b3 100%);
+    margin-right: 2px;
+    animation: moveRight 3s infinite;
+    opacity: 0;
+}
+
+@keyframes moveRight {
+    0% { opacity: 1; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(220px); }
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.copyright {
+    font-size: 13px;
+    opacity: 0.8;
+}
